@@ -48,11 +48,16 @@ venv.bak/
 ehthumbs.db
 Thumbs.db
 
-# Output files (keep the structure but ignore large binary files)
+# Output files (ignore large binary files but keep important ones)
 Output/*.png
 Output/*.txt
 Visualization/*.png
 Visualization/*.gif
+
+# But allow important Python files and documentation
+!Visualization/*.py
+!Visualization/README.md
+!Output/*.csv
 
 # Logs
 *.log
